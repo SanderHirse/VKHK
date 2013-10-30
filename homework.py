@@ -2,37 +2,26 @@ import os
 clear = os.system('clear');
 
 def question():
-	return raw_input('Wich function would you like to use? (upper, lower, capitalize, swapcase, lstrip) = ')
-def again():
- 	return raw_input('Try again? (yes/no) = ')
-#Return a copy of the string with all the cased characters converted to uppercase.
-def upper(name):
-	print name.upper();
-#Return a copy of the string with its first character capitalized and the rest lowercased.
-def capitalize(name):
-	print name.capitalize();
-#Return a copy of the string with all the cased characters converted to lowercase.
-def lower(name):
-	print name.lower();
-#Return a copy of the string with uppercase characters converted to lowercase and vice versa.
-def swapcase(name):
-	print name.swapcase();
-#Return a copy of the string with leading characters removed.
-def lstrip(name, chars):
-	print 'Removed characters ' + chars + ', left:' + name.lstrip(chars);
+ 	return raw_input('Wich function would you like to use? (upper, lower, capitalize, swapcase, lstrip) = ')
+    
 #Converter
 def converter(name):
     if function_to_use == 'upper':
-        upper(name);
+        #Return a copy of the string with all the cased characters converted to uppercase.
+        print name.upper();
     elif function_to_use == 'lower':
-        lower(name);
+        #Return a copy of the string with uppercase characters converted to lowercase and vice versa.
+        print name.lower();
     elif function_to_use == 'capitalize':
-        capitalize(name);
+        #Return a copy of the string with its first character capitalized and the rest lowercased.
+        print name.capitalize();
     elif function_to_use == 'swapcase':
-        swapcase(name);
+        #Return a copy of the string with leading characters removed.
+        print name.swapcase();
     elif function_to_use == 'lstrip':
         strip = raw_input('Enter leading characters to remove = ')
-        lstrip(name,strip);
+        #Return a copy of the string with leading characters removed.
+        print 'Removed characters ' + chars + ', left:' + name.lstrip(chars);
     else:
         print 'Command not found!'
 
@@ -53,4 +42,4 @@ while True:
         print "Bye!"
         break
     else:
-        print"Please enter Y or N. Try again."
+        print"Sorry, that wasn't Y or N. Try again."
