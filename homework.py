@@ -16,7 +16,7 @@ def converter(name):
         #Return a copy of the string with its first character capitalized and the rest lowercased.
         print name.capitalize();
     elif function_to_use == 'swapcase':
-        #Return a copy of the string with leading characters removed.
+        #Return a copy of the string with uppercase characters converted to lowercase and vice versa.
         print name.swapcase();
     elif function_to_use == 'lstrip':
         strip = raw_input('Enter leading characters to remove = ')
