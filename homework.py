@@ -21,13 +21,12 @@ def swapcase(name):
     print name.swapcase();
 #Return a copy of the string with leading characters removed.
 def lstrip(name, chars):
-	print 'Removed characters '+chars+', left:' + name.lstrip(chars);
+	print 'Removed characters ' + chars + ', left:' + name.lstrip(chars);
 
 
 #Question?
 name = raw_input('Enter your name = ')
 function_to_use = question()
-
 
 #Other Sh
 if function_to_use == 'upper':
