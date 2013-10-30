@@ -1,4 +1,3 @@
-programmeerimine
+Sup
 ================
 
-AAp-11 programmeerimine
