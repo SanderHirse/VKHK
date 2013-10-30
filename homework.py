@@ -69,6 +69,6 @@ if function_to_use == 'lstrip':
 	lstrip(name,strip);
 	again();
 	if again == 'yes':
-		question();
+		question(); 
 	else:
 		print 'Bye!';
