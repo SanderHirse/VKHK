@@ -22,48 +22,37 @@ def swapcase(name):
 #Return a copy of the string with leading characters removed.
 def lstrip(name, chars):
 	print 'Removed characters ' + chars + ', left:' + name.lstrip(chars);
-
+#Converter
+def converter(name):
+    if function_to_use == 'upper':
+        upper(name);
+    elif function_to_use == 'lower':
+        lower(name);
+    elif function_to_use == 'capitalize':
+        capitalize(name);
+    elif function_to_use == 'swapcase':
+        swapcase(name);
+    elif function_to_use == 'lstrip':
+        strip = raw_input('Enter leading characters to remove = ')
+        lstrip(name,strip);
+    else:
+        print 'Command not found!'
 
 #Question?
 name = raw_input('Enter your name = ')
 function_to_use = question()
+converter(name);
 
-#Other Sh
-if function_to_use == 'upper':
-	upper(name);
-	if again() == 'yes':
-		question();
-	else:
-		print 'Bye!';
-
-#String to lower
-if function_to_use == 'lower':
-	lower(name);
-	if again() == 'yes':
-		question();
-	else:
-		print 'Bye!';
-
-#Capitalize string
-if function_to_use == 'capitalize':
-	capitalize(name);
-	if again() == 'yes':
-		question();
-	else:
-		print 'Bye!';
-
-#Swap characters
-if function_to_use == 'swapcase':
-	swapcase(name);
-	if again() == 'yes':
-		question();
-	else:
-		print 'Bye!';
-#lStrip 
-if function_to_use == 'lstrip':
-	strip = raw_input('Enter leading characters to remove = ')
-	lstrip(name,strip);
-	if again() == 'yes':
-		question();
-	else:
-		print 'Bye!';
+#Try Again
+while True:
+    try_again = raw_input("Try again? (Y/N)")
+    if try_again == "Y":
+        name = raw_input('Enter your name = ')
+        function_to_use = question()
+        converter(name);
+        pass
+    elif try_again == "N":
+        print "Bye!"
+        break
+    else:
+        print"Sorry, that wasn't Y or N. Try again."
