@@ -2,23 +2,23 @@ import os
 clear = os.system('clear');
 
 def question():
- 	return raw_input('Wich function would you like to use? (upper, lower, capitalize, swapcase, lstrip) = ')
+	return raw_input('Wich function would you like to use? (upper, lower, capitalize, swapcase, lstrip) = ')
 
 def again():
  	return raw_input('Try again? (yes/no) = ')
 
 #Return a copy of the string with all the cased characters converted to uppercase.
 def upper(name):
-    print name.upper();
+	print name.upper();
 #Return a copy of the string with its first character capitalized and the rest lowercased.
 def capitalize(name):
-    print name.capitalize();
+	print name.capitalize();
 #Return a copy of the string with all the cased characters converted to lowercase.
 def lower(name):
 	print name.lower();
 #Return a copy of the string with uppercase characters converted to lowercase and vice versa.
 def swapcase(name):
-    print name.swapcase();
+	print name.swapcase();
 #Return a copy of the string with leading characters removed.
 def lstrip(name, chars):
 	print 'Removed characters ' + chars + ', left:' + name.lstrip(chars);
@@ -55,4 +55,4 @@ while True:
         print "Bye!"
         break
     else:
-        print"Sorry, that wasn't Y or N. Try again."
+        print"Please enter Y or N. Try again."
