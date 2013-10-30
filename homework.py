@@ -32,15 +32,15 @@ converter(name);
 
 #Try Again
 while True:
-    try_again = raw_input("Try again? (Y/N)")
-    if try_again == "Y":
+    try_again = raw_input('Try again? (Y/N)')
+    if try_again == 'Y':
         name = raw_input('Enter your name = ')
         function_to_use = question()
         converter(name);
         pass
-    elif try_again == "N":
-        print "Bye!"
+    elif try_again == 'N':
+        print 'Bye!'
         break
     else:
-        print"Sorry, that wasn't Y or N. Try again."
+        print 'Sorry, that wasn\'t Y or N. Try again.'
         
