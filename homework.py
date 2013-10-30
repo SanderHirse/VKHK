@@ -3,10 +3,8 @@ clear = os.system('clear');
 
 def question():
 	return raw_input('Wich function would you like to use? (upper, lower, capitalize, swapcase, lstrip) = ')
-
 def again():
  	return raw_input('Try again? (yes/no) = ')
-
 #Return a copy of the string with all the cased characters converted to uppercase.
 def upper(name):
 	print name.upper();
