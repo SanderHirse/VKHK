@@ -32,7 +32,7 @@ function_to_use = question()
 if function_to_use == 'upper':
 	upper(name);
 	again();
-	if again == 'Yes':
+	if again == 'yes':
 		question();
 	else:
 		print 'Bye!';
@@ -41,7 +41,7 @@ if function_to_use == 'upper':
 if function_to_use == 'lower':
 	lower(name);
 	again();
-	if again == 'Yes':
+	if again == 'yes':
 		question();
 	else:
 		print 'Bye!';
@@ -50,7 +50,7 @@ if function_to_use == 'lower':
 if function_to_use == 'capitalize':
 	capitalize(name);
 	again();
-	if again == 'Yes':
+	if again == 'yes':
 		question();
 	else:
 		print 'Bye!';
@@ -59,7 +59,7 @@ if function_to_use == 'capitalize':
 if function_to_use == 'swapcase':
 	swapcase(name);
 	again();
-	if again == 'Yes':
+	if again == 'yes':
 		question();
 	else:
 		print 'Bye!';
@@ -68,7 +68,7 @@ if function_to_use == 'lstrip':
 	strip = raw_input('Enter leading characters to remove = ')
 	lstrip(name,strip);
 	again();
-	if again == 'Yes':
+	if again == 'yes':
 		question();
 	else:
 		print 'Bye!';
