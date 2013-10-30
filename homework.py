@@ -2,7 +2,7 @@ import os
 clear = os.system('clear');
 
 def question():
- 	return raw_input('Wich function would you like to use? (upper, lower, capitalize, swapcase, lstrip) = ')
+ 	return raw_input('Which function would you like to use? (upper, lower, capitalize, swapcase, lstrip) = ')
     
 #Converter
 def converter(name):
