@@ -21,7 +21,7 @@ def converter(name):
     elif function_to_use == 'lstrip':
         strip = raw_input('Enter leading characters to remove = ')
         #Return a copy of the string with leading characters removed.
-        print 'Removed characters ' + chars + ', left:' + name.lstrip(chars);
+        print 'Removed characters ' + strip + ', left:' + name.lstrip(strip);
     else:
         print 'Command not found!'
 
